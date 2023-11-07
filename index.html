@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MACDILL PHARMA- A certified Pharmacy Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .header {
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(pharmacy.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        nav img {
+            width: 200px;
+            px;
+        }
+
+        .nav-links {
+            flex: 1;
+            text-align: right;
+        }
+
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+
+        .nav-links ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 19px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .nav-links ul li::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #36c5f4;
+            display: block;
+            margin: auto;
+        }
+
+        .nav-links ul li:hover::after {
+            width: 100%;
+            transition: 0.5s;
+            box-shadow: 5px 5px 15px 5px #225b97;
+        }
+
+        .text-box {
+            width: 90%;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .text-box h1 {
+            font-size: 62px;
+        }
+
+        .text-box p {
+            margin: 10px 0 40px;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .hero-btn:hover {
+            border: 1px solid #f44336;
+            background: #36c1f4;
+            transition: 1s;
+            border-radius: 500px;
+            box-shadow: 5px 5px 15px 5px #225b97;
+
+        }
+
+        @media(max-width: 700px) {
+            .text-box h1{
+                font-size: 20px;
+                
+            }
+            .nav-links ul li{
+                display: block;
+            }
+            .nav-links{
+                position: absolute;
+                background: #20555b;
+                height: 100vh;
+                width: 200px;
+                top: 0;
+                right: 0;
+                text-align: left;
+                z-index: 2;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="logo2.png"></a>
+            <div class="nav-links">
+                <i class="fa fa-server" aria-hidden="true"></i>
+
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </nav>
+        <div class="text-box">
+            <h1>World's Biggest Pharmacy Company</h1>
+            <p>Making website is now one of the easiest thing in the world. First of all you have to learn
+                HTML,CSS,<br>javascript and you are good to go with making of the website</p>
+            <a href="" class="hero-btn">Visit us to know More</a>
+        </div>
+    </section>
+</body>
+
+</html>
